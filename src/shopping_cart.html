@@ -1,0 +1,155 @@
+//= html_parts/head.html
+
+//= html_parts/header.html
+
+		<main>
+			<div class="h1-block">
+				<div class="container">
+					<h1>Корзина</h1>
+					<div class="subtext">
+						<ul>
+							<li><a href="#" class="active">Свежеобжаренный кофе Makkava</a></li>
+							<li><a href="#">Корзина</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tabs-section">
+				<div class="container">
+					
+					<div class="cart tab">
+						<h2>2 товара</h2>
+						<div class="cart-item flexbox flex-space-b flex-wrap">
+							<div class="img-wrap bg-layout-cover flex-shrink-0" style="background-image: url(img/prod1.jpg)">
+								<div class="stick"><span>-15%</span></div>
+							</div>
+							<div class="cart-item-cell flex-grow-1">
+								<h4>MAKКAVA Blend #2</h4>
+								<p class="sort">Арабика 100%</p>
+								<p class="weight">1 кг</p>
+							</div>
+							<div class="cart-item-cell">
+								<input type="number" class="number2" min="1" value="1">
+							</div>
+							<div class="cart-item-cell flexbox flex-direct-col flex-space-b flex-align-bottom">
+								<div class="p-group">
+									<p class="summ">320 грн.</p>
+									<p class="quantity">320 грн. x 2 шт.</p>
+								</div>
+								<button type="button" class="bttn grey-bord-btn">Удалить</button>
+							</div>
+						</div>
+						<div class="cart-item flexbox flex-space-b flex-wrap">
+							<div class="img-wrap bg-layout-cover flex-shrink-0" style="background-image: url(img/prod1.jpg)">
+								
+							</div>
+							<div class="cart-item-cell flex-grow-1">
+								<h4>MAKКAVA Blend #4</h4>
+								<p class="sort">Арабика 80% / Рабуста 20%</p>
+								<p class="weight">1 кг</p>
+							</div>
+							<div class="cart-item-cell">
+								<input type="number" class="number2" min="1" value="1">
+							</div>
+							<div class="cart-item-cell flexbox flex-direct-col flex-space-b flex-align-bottom">
+								<div class="p-group">
+									<p class="summ">400 грн.</p>
+								</div>
+								<button type="button" class="bttn grey-bord-btn">Удалить</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="make-order tab">
+						<h2>Оформление заказа</h2>
+						<form action="#" id="make-order">
+							<div class="make-order-inner flexbox flex-space-b flex-wrap">
+								<div class="left-part">
+									<div class="order-details">
+										<div class="input-wrap flexbox flex-align-center flex-wrap">
+											<label class="flex-shrink-0">Телефон <span>*</span></label>
+											<input type="tel" class="tel req-field" name="tel" placeholder="+38 (___) ___-__-__" required>
+										</div>
+										<div class="input-wrap flexbox flex-align-center flex-wrap">
+											<label class="flex-shrink-0">ФИО <span>*</span></label>
+											<input type="text" class="req-field" name="name" required>
+										</div>
+										<div class="input-wrap flexbox flex-align-center flex-wrap">
+											<label class="flex-shrink-0">Электронная почта <span>*</span></label>
+											<input type="email" name="email" required>
+										</div>
+										<div class="input-wrap flexbox flex-align-center flex-wrap">
+											<label class="flex-shrink-0">Населенный пункт <span>*</span></label>
+											<input type="text" name="city" required>
+										</div>
+										<div class="input-wrap flexbox flex-align-center flex-wrap">
+											<label class="flex-shrink-0">Служба доставки <span>*</span></label>
+											<select name="deliver_serv" class="deliver-serv number select req-field" data-smart-positioning="false">
+												<option value="opt1">Новая Почта</option>
+												<option value="opt2">УкрПочта</option>
+												<option value="opt3">Самовывоз</option>
+											</select>
+										</div>
+										<div class="input-wrap flexbox flex-align-center flex-wrap">
+											<label class="flex-shrink-0">Отделение Новой Почты <span>*</span></label>
+											<select name="deliver_depart" class="deliver-depart number select req-field" data-smart-positioning="false">
+												<option value="opt1">№34: ул. Ташкентская, 60 (м. Бориспольская)</option>
+												<option value="opt2">№35: ул. Ташкентская, 60 (м. Бориспольская)</option>
+												<option value="opt3">№36: ул. Ташкентская, 60 (м. Бориспольская)</option>
+											</select>
+										</div>
+										<div class="input-wrap flexbox flex-align-center flex-wrap">
+											<label class="flex-shrink-0">Вариант оплаты <span>*</span></label>
+											<select name="payment" class="payment number select req-field" data-smart-positioning="false">
+												<option value="opt1">Наложенный платеж</option>
+												<option value="opt2">Наличный расчет</option>
+												<option value="opt3">Безналичный расчет</option>
+											</select>
+										</div>
+										<div class="input-wrap flexbox flex-align-top flex-wrap">
+											<label class="flex-shrink-0">Комментарий</label>
+											<textarea name="mess" placeholder="Вы можете указать второй номер телефона. он поможет службе доставки связаться с вами по дополнительному номеру"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="right-part">
+									<p class="color-grey">Нажимая на кнопку "Оформить заказ", вы принимаете условия <a href="#" class="color-brown">Публичной оферты</a></p>
+									<p class="color-red">Заказы более 800 грн - Доставка бесплатно!</p>
+									<table>
+										<tbody>
+											<tr>
+												<td>Сумма:</td>
+												<td>4 650 грн.</td>
+											</tr>
+											<tr>
+												<td>Доставка:</td>
+												<td class="color-red">Бесплатно</td>
+											</tr>
+											<tr>
+												<td>Итого:</td>
+												<td>4 650 грн.</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="clear"></div>
+									<div class="summary-bl">
+										<p><strong>Итого:</strong></p>
+										<p>3 товара на сумму <strong>4 650 грн.</strong></p>
+									</div>
+									<button type="submit" class="bttn brown-btn">Оформить заказ</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+			
+		</main>
+
+//= html_parts/footer.html
+
+//= html_parts/modals.html
+
+//= html_parts/end.html

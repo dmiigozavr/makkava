@@ -1,0 +1,142 @@
+		<!-- modals -->
+		<div class="modal fade enter" id="enter" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header flexbox flex-space-end">
+						<h3>Вход</h3>
+						<p>Авторизируйтесь с помощью соцсетей</p>
+						<ul class="social-links">
+							<li><a href="#" class="icon-vkontakte"></a></li>
+							<li><a href="#" class="icon-facebook"></a></li>
+							<li><a href="#" class="icon-gplus"></a></li>
+						</ul>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+						<span class="or">или</span>
+					</div>
+					<div class="modal-body">
+						<form action="#" id="enter-form">
+							<div class="input-wrap">
+								<input type="email" class="req-field" name="email" placeholder="E-mail" required>
+							</div>
+							<div class="input-wrap">
+								<input type="password" class="req-field" name="pass" placeholder="Пароль" required>
+								<button type="button" class="btn-as-link" data-dismiss="modal" data-toggle="modal" data-target="#recovery-pass">Не помните?</button>
+							</div>
+							<div class="btn-group">
+								<button type="submit" class="submit bttn red-btn">Войти</button>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer var1">
+						<button type="button" class="btn-as-link" data-dismiss="modal" data-toggle="modal" data-target="#registration">Регистрация нового пользователя</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade recovery-pass" id="recovery-pass" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header flexbox flex-space-end">
+						<h3>Вход</h3>
+						<p>Авторизируйтесь с помощью соцсетей</p>
+						<ul class="social-links">
+							<li><a href="#" class="icon-vkontakte"></a></li>
+							<li><a href="#" class="icon-facebook"></a></li>
+							<li><a href="#" class="icon-gplus"></a></li>
+						</ul>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+						<span class="or">или</span>
+					</div>
+					<div class="modal-body">
+						<form action="#" id="recovery-form">
+							<div class="input-wrap">
+								<p>Восстановление пароля</p>
+							</div>
+							<div class="input-wrap">
+								<input type="email" class="req-field" name="email" placeholder="E-mail" required>
+							</div>
+							<div class="btn-group flexbox flex-space-b">
+								<button type="submit" class="btn-as-link icon-left-open-mini" data-dismiss="modal" data-toggle="modal" data-target="#enter">Помню пароль</button>
+								<button type="submit" class="bttn red-btn">Восстановить</button>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer var1">
+						<button type="button" class="btn-as-link" data-dismiss="modal" data-toggle="modal" data-target="#registration">Регистрация нового пользователя</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade registration" id="registration" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header var1 flexbox flex-space-end">
+						<h3>Регистрация</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+					</div>
+					<div class="modal-body var1">
+						<form action="#" id="reg-form">
+							<div class="input-wrap">
+								<input type="email" class="req-field" name="email" placeholder="E-mail" required>
+							</div>
+							<div class="input-wrap">
+								<input type="password" class="req-field" name="pass" placeholder="Пароль" required>
+							</div>
+							<div class="input-wrap">
+								<input type="password" class="req-field" name="pass_r" placeholder="Повторите пароль" required>
+							</div>
+							<div class="input-wrap">
+								<input type="text" class="req-field" name="name" placeholder="ФИО" required>
+							</div>
+							<div class="btn-group">
+								<button type="submit" class="bttn red-btn">Зарегистрироваться</button>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer flex-space-c">
+						<p>Войти: </p>
+						<ul class="social-links var1">
+							<li><a href="#" class="icon-vkontakte"></a></li>
+							<li><a href="#" class="icon-facebook"></a></li>
+							<li><a href="#" class="icon-gplus"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade price-list" id="price-list" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header var1 flexbox flex-space-end">
+						<h3>Отправить запрос на прайс-лист</h3>
+						<p>Как только получим ваше сообщение мы с вами свяжемся!</p>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+					</div>
+					<div class="modal-body">
+						<form action="#" id="price-list-form">
+							<div class="input-group flexbox flex-space-b">
+								<div class="input-wrap">
+									<label>ФИО <span>*</span>:</label>
+									<input type="text" class="req-field" name="user_name" required>
+								</div>
+								<div class="input-wrap">
+									<label>Телефон <span>*</span>:</label>
+									<input type="tel" class="req-field tel" name="tel" placeholder="+38 (___) ___-__-__" required>
+								</div>
+							</div>
+							<div class="input-wrap">
+								<textarea name="mess" placeholder="Текст сообщения"></textarea>
+							</div>
+							<div class="btn-group flexbox flex-space-b flex-wrap">
+								<button type="button" class="bttn grey-bord-btn" data-dismiss="modal">Я передумал(а) отправлять</button>
+								<button type="submit" class="bttn red-btn">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- </modals -->
